@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day 3</title>
+	<!-- <script type="text/javascript">
+		alert("FROM HEAD: " + document.body);
+	</script> -->
+</head>
+<body>
+	<!-- <div>Begin</div>
+
+	<ul>
+		<li>info</li>
+	</ul>
+
+	<div>End</div> -->
+
+	<!-- <div id="elem">
+		outside inner div
+		<div id="elem-content">
+			i'm a content
+		</div>
+	</div> -->
+
+	<!-- <table id="table">
+		<tr>
+			<td>Age</td>
+			<td>
+				<label>
+					<input type="radio" name="age" value="adult"> from 18 to 50
+				</label>
+				<label>
+					<input type="radio" name="age" value="senior" checked> more than 60
+				</label>
+			</td>
+		</tr>
+	</table> -->
+
+	<div id="exercise">
+		<ul id="jamie-t-albums">
+			<li>Panic Prevention</li>
+			<li>Kings and Queens</li>
+			<li>Carry on the Grudge</li>
+			<li>Trick</li>
+		</ul>
+
+		<ul id="the-xx-albums">
+			<li>The xx</li>
+			<li>Coexist</li>
+			<li>I see you</li>
+		</ul>
+
+		<ul id="crj-albums">
+			<li>Tug of War</li>
+			<li>KISS</li>
+			<li>Emotion</li>
+		</ul>
+	</div>
+
+	<!-- <input type="button" onclick="countSheep()" value="Count Sheep!"> -->
+
+	<input id="multiple-events" type="button" value="Hide">
+
+	<script type="text/javascript">
+		// alert("FROM BODY: " + document.body);
+
+		// for (let i = 0; i < document.body.childNodes.length; i++) {
+		// 	alert(document.body.childNodes[i]);
+		// }
+
+		// let elem = document.getElementById('elem');
+		// elem.style.fontWeight = 'bolder';
+		// elem.style.color = 'green';
+
+		// let inputs = document.getElementsByTagName("input");
+
+		// for(input of inputs) {
+		// 	alert(`${input.value}: ${input.checked}`);
+		// }
+
+		// let lists = document.getElementsByTagName('ul');
+
+		// for (list of lists) {
+		// 	alert(`${list.id}: ${list.children.length}`); 
+		// }		
+
+		// let div = document.createElement("div");
+
+		// div.className = "alert alert-success";
+
+		// div.innerHTML = "<strong>Alert</strong><br />Read this message";
+
+		// document.body.appendChild(div);
+
+		// function countSheep() {
+		// 	for (let i = 1; i < 4; i++) {
+		// 		if (i == 1) alert(`${i} sheep jumped`);
+		// 		else alert(`${i} sheeps jumped`);
+		// 	}
+		// }
+
+		// function handler1 () {
+		// 	alert('handler 1');
+		// }
+
+		// function handler2 () {
+		// 	alert('handler 2');
+		// }
+
+		// let btn = document.getElementById('multiple-events');
+
+		// btn.onclick = () => {
+		// 	alert("onclick");
+		// }
+
+		// btn.addEventListener('click', handler1);
+		// btn.addEventListener('click', handler2);
+
+		let btn = document.getElementById('multiple-events');
+
+		btn.onclick = () => {
+			let elem = document.getElementById('exercise');
+
+			if (btn.value === 'Hide') {
+				elem.style.display = 'none';
+				btn.value = 'Show';
+			}
+
+			else if (btn.value === 'Show') {
+				elem.style.display = 'inline';
+				btn.value = 'Hide';	
+			}
+
+		}
+	</script>
+</body>
+</html>
